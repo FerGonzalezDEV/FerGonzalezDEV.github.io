@@ -1,0 +1,528 @@
+
+/* PATRONES GLOBALES DE CSS */
+
+/* Tipografía Principal */
+h1, h2, h3, a, button { font-family: 'Montserrat', sans-serif;}
+
+/* Tipografía Secundaria */
+h4, h5, h6, p, form, input, select, option, div, span { font-family: 'Poppins', sans-serif; }
+
+/* Asignación de propiedad display: block; a etiquetas de estructura */
+header, section, main, footer, aside, figure, figcaption, nav, div {display: block;}
+
+/* Quitar margen por defecto de varias etiquetas HTML5 */
+body, h1, h2, h3, h4, h5, h6, figure, img {  margin: 0;}
+
+
+/* CSS propio  */
+
+/* Componente Botón Whatsapp Flotante */
+aside#boton-wp { float: none;
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin: 0;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99998 }
+
+aside#boton-wp a { background: #00bb2d;
+        float: none;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0;
+        position: relative;
+        border-radius: 50%;
+        text-align: center;
+        transition: 0.3s ease-in;
+        padding: 10px 0;}
+
+ aside#boton-wp a i {    font-size: 1.5em;
+    line-height: 1em;
+    color: #fff;
+    transition: 0.3s ease-in; }
+aside#boton-wp a:hover {background: #000; 
+    transition: 0.3s ease-in;}
+aside#boton-wp a:hover i { color: #00bb2d; 
+    transition: 0.3s ease-in;}
+
+
+
+/* Componente Menú Responsive */
+aside#menu-moviles {     width: 290px;
+    height: 100%;
+    display: none;
+    margin: 0;
+    float: none;
+    position: fixed;
+    right: -290px;
+    top: 0;
+    z-index: 99999;
+    background: #e7e541; }
+
+aside#menu-moviles a#abrir-menu{    width: 35px;
+    height: auto;
+    margin: 0;
+    float: none;
+    position: absolute;
+    top: 25px;
+    left: -35px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background: #e7e541;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 1em;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px 0 0 5px;
+    transition: all 0.3s ease-in;}
+aside#menu-moviles a#abrir-menu:hover { background: #e7e541; 
+    transition: all 0.3s ease-in }
+
+aside#menu-moviles a#cerrar-menu { width: 35px; 
+    height: auto; 
+    margin: 0; 
+    float: none; 
+    position: absolute; 
+    top: 25px; 
+    left: -35px; 
+    display: none; 
+    text-decoration: none; 
+    color: #fff; 
+    background: #e7e541; 
+    font-weight: 600; 
+    font-size: 1em; 
+    line-height: 1em; 
+    text-align: center; 
+    padding: 10px 0; 
+    border-radius: 5px 0 0 5px; 
+    transition: all 0.3s ease-in; }
+aside#menu-moviles a#cerrar-menu:hover { background: #77761c; 
+    transition: all 0.3s ease-in; }
+
+aside#menu-moviles nav { width: 60%; 
+    height: auto; 
+    margin: 15% auto; 
+    float: none; 
+    position: relative; }
+aside#menu-moviles nav a { width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative;
+    color: #fff; 
+    font-weight: 600; 
+    font-size: 1.25em; 
+    padding: 10px 0; 
+    text-decoration: none; 
+    transition: all 0.3s ease-in; }
+aside#menu-moviles nav a:hover { color: #f3e075; 
+    transition: all 0.3s ease-in; }
+
+    /* Componente header con Logo y Menú */
+header{      float: none;
+    width: 100%;
+    display: block;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99990;
+    overflow: hidden; 
+    background: url('../img/header.jpg') no-repeat bottom center fixed rgb(123 118 118); 
+    background-size: cover;
+    transition: height, ease-in .3s;
+}
+    
+  header.no-sticky { 
+    height: 500px; }
+  header.sticky { 
+    height: 110px; }  
+
+    header div#fondo-oscuro-header { 
+        width: 100%; 
+        height: 500px; 
+        display: block; 
+        margin: 0;
+       float: none; 
+       position: absolute; 
+       top: 0; 
+       left: 0; 
+       z-index: 1; }
+    header div#fondo-oscuro-header.oscuro
+    { background: rgba(141, 140, 140, 0.55);
+    display: none;}
+   header div#fondo-oscuro-header.claro
+    { background: rgba(209, 209, 209, 0.55);
+    backdrop-filter: blur(8px);
+    }
+
+header article{ float: none;
+    width: 1100px;
+    height: 80px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9990; }
+header article figure{     float: left;
+    width: 152px;
+    height: 60px;
+    margin: 0 ;
+    position: relative;
+    top: 20px;
+    left: 30px; }
+header article figure a{ float: none;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: relative;
+    display: block; }
+header article figure a img{ float: none;
+    width: auto;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    display: block; }
+
+header article nav {  float: right;
+    width: 308px;
+    height: 40px;
+    margin: 0;
+    position: relative;
+    top: 20px;}
+header article nav a{ float: left;
+    width: auto;
+    height: auto;
+    margin: 0 10px;
+    position: relative;
+    text-decoration: none;
+    color: #141413;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1em;
+    text-align: center;
+    padding: 12px 0;
+     border-bottom: solid 2px #fff; 
+    transition: 0.3s ease-in;}
+header article nav a:hover {color: #e7e541 ; 
+    border-bottom: solid 2px #141413 ;
+    transition: 0.3s ease-in;  }
+
+    /* Caja main */
+main{  width: 100%;
+    height: auto;
+    margin: 120px auto 0;
+    float: none;
+    position: relative;
+padding-bottom: 30px;
+transition: margin-top, ease-in .3s;}
+main.margin-600 { 
+    margin: 520px auto 0; }
+  main.margin-200 { 
+    margin: 170px auto 0;
+}
+
+/* Entradas */
+    main section#entradas { width: 100%; 
+        height: auto; 
+        margin: 0 auto 120px; 
+        float: none; 
+        position: relative; 
+        text-align: center;
+        font-size: 25px;  }
+
+    main section#entradas figure h1{padding-top: 119px;}
+     main section#entrada div#ancla-entradas { width: 100%; 
+        height: 1px; 
+        margin: 0; 
+        float: none; 
+        position: absolute; 
+        top: -120px; 
+        left: 0; }
+    main section#entradas article{ width: 1100px; 
+        height: 230px; 
+        margin: 0 auto; 
+        float: none; 
+        position: relative; } 
+    main section#entradas article figure{   width: 230px; 
+        height: 230px; 
+        margin: 0 60px 0 0; 
+        float: left; 
+        position: relative;   }
+    main section#entradas article figure:last-child { margin: 0; }
+    main section#entradas figure h1{  font-size: 40px;
+    color: #e7e541;
+      } 
+    main section#entradas article figure img{  width: auto; 
+        height: 210px; 
+        margin: 0 auto 25px; 
+        float: none; 
+        position: relative; 
+        display: block;  
+        padding-top: 40px;  }
+        main section#entradas article figure h3{
+            font-size: 15px;
+        }
+    main section#entradas article figure p{color: #333;
+         font-weight: 400;
+          font-size: 10px;
+           line-height: 1.45em;
+         text-align: center;
+          padding: 0;
+           letter-spacing: 0.015em;  }
+
+       /*     Plato fuerte */
+       main section#Platofuerte { width: 100%; 
+        height: auto; 
+        margin: 0 auto 120px; 
+        float: none; 
+        position: relative; 
+        text-align: center;
+        font-size: 25px;  }
+     main section#Platofuerte div#ancla-Platofuerte { width: 100%; 
+        height: 1px; 
+        margin: 0; 
+        float: none; 
+        position: absolute; 
+        top: -120px; 
+        left: 0; }
+    main section#Platofuerte article{ width: 1100px; 
+        height: 230px; 
+        margin: 0 auto 90px; 
+        float: none; 
+        position: relative; } 
+        main section#Platofuerte article #caja1{
+            width: 100%;
+            height: 230px;
+            margin: 0 auto 90px;
+            float: none;
+            position: relative;
+        }
+        main section#Platofuerte article #caja2{
+            width: 100%;
+            height: 230px;
+            margin: auto auto 120px;
+            float: none;
+            position: relative;
+        }
+    main section#Platofuerte article #caja1 figure{   width: 230px; 
+        height: 230px; 
+        margin: 0 60px 0 0; 
+        float: left; 
+        position: relative;   }
+    main section#Platofuerte article #caja1 figure:last-child { margin: 0; }
+    main section#Platofuerte figure h1{  font-size: 40px;
+        color: #e7e541;
+          padding-top: 20px;} 
+    main section#Platofuerte article #caja1 figure img{  width: auto; 
+        height: 210px; 
+        margin: 0 auto 25px; 
+        float: none; 
+        position: relative; 
+        display: block;  
+        padding-top: 40px;  }
+        main section#Platofuerte article #caja1 figure h3{
+            font-size: 15px;
+        }
+
+    main section#Platofuerte article #caja1 figure p{color: #333;
+         font-weight: 400;
+          font-size: 10px;
+           line-height: 1.45em;
+         text-align: center;
+          padding: 0;
+           letter-spacing: 0.015em;  }
+
+           main section#Platofuerte article #caja2 figure{   width: 230px; 
+        height: 230px; 
+        margin: 0 60px 0 0; 
+        float: left; 
+        position: relative;   }
+    main section#Platofuerte article #caja2 figure:last-child { margin: 0; }
+    main section#Platofuerte article #caja2 figure img{  width: auto; 
+        height: 210px; 
+        margin: 0 auto 25px; 
+        float: none; 
+        position: relative; 
+        display: block;  
+        padding-top: 40px;  }
+        main section#Platofuerte article #caja2 figure h3{
+            font-size: 15px;
+        }
+
+    main section#Platofuerte article #caja2 figure p{color: #333;
+         font-weight: 400;
+          font-size: 10px;
+           line-height: 1.45em;
+         text-align: center;
+          padding: 0;
+           letter-spacing: 0.015em;  }
+/* 
+           Postre */
+
+           main section#Postre { width: 100%; 
+            height: auto; 
+            margin: 0 auto 100px; 
+            float: none; 
+            position: relative; 
+            text-align: center;
+            font-size: 25px;  }
+            
+         main section#Postre div#ancla-Postre { width: 100%; 
+            height: 1px; 
+            margin: 0; 
+            float: none; 
+            position: absolute; 
+            top: -120px; 
+            left: 0; }
+        main section#Postre article{ width: 1100px; 
+            height: 230px; 
+            margin: 0 auto; 
+            float: none; 
+            position: relative; } 
+        main section#Postre article figure{   width: 230px; 
+            height: 230px; 
+            margin: 0 60px 0 0; 
+            float: left; 
+            position: relative;   }
+            main section#Postre figure h1{  font-size: 40px;
+                color: #e7e541;
+                  padding-top: 20px;} 
+        main section#Postre article figure:last-child { margin: 0; }
+        main section#Postre article figure img{  width: auto; 
+            height: 210px; 
+            margin: 0 auto 25px; 
+            float: none; 
+            position: relative; 
+            display: block;  
+            padding-top: 40px;  }
+            main section#Postre article figure h3{
+                font-size: 15px;
+            }
+    
+        main section#Postre article figure p{color: #333;
+             font-weight: 400;
+              font-size: 10px;
+               line-height: 1.45em;
+             text-align: center;
+              padding: 0;
+               letter-spacing: 0.015em;  }
+
+               /* Componente Footer  */
+footer { width: 100%; 
+    height: auto; 
+    margin: 0 auto; 
+    float: none; 
+    position: relative; 
+    background: rgb(37, 36, 37);
+    text-align: center;
+    ;
+}
+footer figure img{
+    margin: 0;
+    padding-top: 30px;
+}
+footer p{ margin: 0;
+padding-bottom: 30px;}
+footer { width: 100%; 
+    background: url('../img/header.jpg') no-repeat bottom center fixed rgb(95, 17, 17); 
+    background-size: 2000px; overflow: hidden;}
+  footer article { margin: 0 auto; width: 100%;}
+  footer article figure img { width: 70px; float: left; margin: 5.5% 15% 0 10%; }
+  footer article nav { padding: 0 0 15px 0; font-size: 40px;}
+  footer article nav a { height: 40px; width: 40px; color:#000; 
+  text-decoration: none; margin-right: 20px; }
+  footer article nav a:last-child { margin-right: 0; }
+  footer article nav a i { font-size: 1em;}
+
+
+
+
+
+
+    /* Zona de Media Queries - RESPONSIVE DESIGN */
+
+/* Ajustes para Tablets */
+@media only screen and (max-width: 1199px){
+    header div#fondo-oscuro-header.oscuro
+    { background: rgba(141, 140, 140, 0.55);
+    }
+   header div#fondo-oscuro-header.claro
+    { background: rgba(209, 209, 209, 0.55);
+    }
+
+
+
+    header article { width: 90%; }
+    header.no-sticky { height: 250px;}
+  header.sticky { height: 80px;
+    background: url(../img/header.jpg) no-repeat bottom center  rgba(209, 209, 209, 0); 
+    background-size: auto; }
+  header { width: 100%; 
+    background: url(../img/header.jpg) no-repeat bottom center fixed rgb(141, 140, 140, 0.55); 
+    background-size: cover;}
+    header article figure { margin: 0 auto; float: none; }
+    header article nav { display: none; }
+
+    aside#menu-moviles { display: block;}
+
+
+    aside#menu-moviles { display: block; }
+    main.margin-600 { 
+        margin: 270px auto 0; }
+    main.margin-200 { 
+            margin: 140px auto 0; }
+    main section#entradas article { width: 80%; 
+        height: auto; }
+    main section#entradas article figure {height: auto; margin: 0 auto 60px; 
+        float: none; }
+    main section#entradas article figure:last-child {height: auto; margin: 0 auto 60px; }
+  
+
+    main section#Platofuerte article { width: 80%; 
+        height: auto; }
+    main section#Platofuerte article figure {height: auto; margin: 0 auto 60px; 
+        float: none; }
+
+        main section#Platofuerte article #caja1{height: auto;}
+        main section#Platofuerte article #caja1 figure {height: auto; margin: 0 auto 60px; 
+            float: none; }
+        main section#Platofuerte article #caja1 figure:last-child {height: auto; margin: 0 auto 60px; float: none; }
+
+        main section#Platofuerte article #caja2{height: auto;}
+        main section#Platofuerte article #caja2 figure {height: auto; margin: 0 auto 60px; 
+            float: none; }
+        main section#Platofuerte article #caja2 figure:last-child {height: auto; margin: 0 auto 60px; float: none; }
+
+    main section#Postre article { width: 80%; 
+        height: auto; }
+    main section#Postre article figure {height: auto; margin: 0 auto 60px; 
+        float: none; }
+    main section#Postre article figure:last-child {height: auto; margin: 0 auto 60px; float: none;}
+   
+
+    footer { width: 100%; 
+        background: url('../img/header.jpg') no-repeat bottom center fixed rgb(123 118 118); 
+        background-size: 2000px; overflow: hidden;}
+}
+
+@media only screen and (max-width: 799px){
+    
+}
+
+/* Ajustes para Móviles Grandes */
+@media only screen and (max-width: 499px){
+    header article figure { margin: 0; float: left; }
+    main section { width: 100%; 
+        overflow: hidden;}
+}
+
+
+/* Ajustes para Móviles Pequeños */
+@media only screen and (max-width: 399px){
+
+}

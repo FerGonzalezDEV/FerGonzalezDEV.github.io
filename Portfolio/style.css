@@ -241,7 +241,7 @@ section#main-data article#main-right figure{
 
 section#main-data article#main-right img{
     height: 100%;
-                           
+    background-size: object-fit;                      
 }
 
 section#main-data article#main-right a#cv-button{

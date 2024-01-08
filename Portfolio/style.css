@@ -89,7 +89,6 @@ section#main-data{
     gap: 5%;
 }
 section#main-data article#main-left{
-    color: #FCFCFC;
     padding: 50px;
     flex: 0 1 80%;
     display: flex;
@@ -100,6 +99,7 @@ section#main-data article#main-left{
 
 section#main-data article#main-left h1{
     font-size: 3.5em;
+    color: #FCFCFC;
 }
 
 section#main-data article#main-left h1 span{
@@ -108,7 +108,7 @@ section#main-data article#main-left h1 span{
 
 section#main-data article#main-left p{
     font-size: 1.2em;
-    
+    color: #FCFCFC;
 }
 
 section#main-data article#main-left div#main-skills{

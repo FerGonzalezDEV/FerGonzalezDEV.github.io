@@ -70,6 +70,8 @@ header nav a:hover{
     color: #00A5CF;
 }
 
+
+
 main{
     padding: 100px;
     background-color: #0D160B;
@@ -86,7 +88,6 @@ section#main-data{
     height: 650px;
     gap: 5%;
 }
-3
 section#main-data article#main-left{
     color: #FCFCFC;
     padding: 50px;
@@ -133,8 +134,6 @@ section#main-data article#main-left a{
     width: 220px;
     height: 100px;
     transition: color, ease-in .3s;
-    /* border-bottom: 3px solid #09f;
-    line-height: 2em; */
     font-weight: 600;
     padding: 10px;
 }
@@ -185,7 +184,7 @@ section#main-data article#main-right{
 
 section#main-data article#main-right figure{
     position: relative;
-    height: 99%;
+    height: 100%;
     background-color: #333;
     border-radius: 10px; 
     
@@ -286,7 +285,7 @@ section#portfolio a{
 
 
 section#portfolio a:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-shadow: 5px 5px 10px rgba(0, 165, 207, .5), -5px -5px 10px rgba(0, 165, 207, .5);
 }
 
@@ -310,10 +309,6 @@ section#portfolio a div.work-description{
     position: relative;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-section#portfolio a div.work-description p{
-    /* font-size: clamp(1rem 250px 1.5rem); */
 }
 
 footer{
@@ -446,7 +441,7 @@ aside.closed a{
 }
 
 
-/* -------- Media Queries -------- */
+/* 1510 */
 
 @media only screen and (max-width: 1510px) {
     body{

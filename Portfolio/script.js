@@ -33,7 +33,7 @@ menuMobileButton.addEventListener('click', function(){
         line2.setAttribute('y1', '20');
         line2.setAttribute('x2', '20');
         line2.setAttribute('y2', '80');
-        menuMobileButton.style.backgroundColor = 'transparent';
+        menuMobileButton.style.backgroundColor = 'rgba(13, 22, 11,.8)';
         line1.setAttribute('stroke', '#00A5CF');
         line2.setAttribute('stroke', '#00A5CF');
     }

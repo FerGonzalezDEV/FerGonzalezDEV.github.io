@@ -553,9 +553,9 @@ aside.closed a{
         font-size: 1.6rem;
     }
 
-   /*  section#main-data article#main-right{
-        top: 320px;
-    } */
+   section#main-data article#main-right{
+        top: 110px;
+    } 
 }
 
 @keyframes shake {

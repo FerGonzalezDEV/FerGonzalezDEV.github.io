@@ -121,7 +121,7 @@ aside#menu-moviles nav a { width: 100%;
     padding: 10px 0; 
     text-decoration: none; 
     transition: all 0.3s ease-in; }
-aside#menu-moviles nav a:hover { color: #f3e075; 
+aside#menu-moviles nav a:hover { color: #141413; 
     transition: all 0.3s ease-in; }
 
     /* Componente header con Logo y Menú */

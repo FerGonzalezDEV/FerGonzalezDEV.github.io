@@ -136,6 +136,7 @@ section#main-data article#main-left a{
     transition: color, ease-in .3s;
     font-weight: 600;
     padding: 10px;
+    overflow: hidden;
 }
 section#main-data article#main-left a:hover{
     color: #00A5CF;

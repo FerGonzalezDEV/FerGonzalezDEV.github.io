@@ -39,43 +39,44 @@ cells.forEach(cell => {
     cell.addEventListener("click", () =>{
         if (!cell.disabled && cell.textContent === ""){
             cell.textContent = (currentPlayer.textContent === "Player 1") ? "O" : "X";
+        
+            if (cell1.textContent == "O" && cell2.textContent == "O" && cell3.textContent == "O"){
+                draw1(cell1, cell2, cell3);
+            } else if (cell1.textContent == "X" && cell2.textContent == "X" && cell3.textContent == "X"){
+                draw2(cell1, cell2, cell3);
+            } else if (cell4.textContent == "O" && cell5.textContent == "O" && cell6.textContent == "O"){
+                draw1(cell4, cell5, cell6);
+            } else if (cell4.textContent == "X" && cell5.textContent == "X" && cell6.textContent == "X"){
+                draw2(cell4, cell5, cell6);
+            } else if (cell7.textContent == "O" && cell8.textContent == "O" && cell9.textContent == "O"){
+                draw1(cell7, cell8, cell9);
+            } else if (cell7.textContent == "X" && cell8.textContent == "X" && cell9.textContent == "X"){
+                draw2(cell7, cell8, cell9);
+            } else if (cell1.textContent == "O" && cell4.textContent == "O" && cell7.textContent == "O"){
+                draw1(cell1, cell4, cell7);
+            } else if (cell1.textContent == "X" && cell4.textContent == "X" && cell7.textContent == "X"){
+                draw2(cell1, cell4, cell7);
+            } else if (cell2.textContent == "O" && cell5.textContent == "O" && cell8.textContent == "O"){
+                draw1(cell2, cell5, cell8);
+            } else if (cell2.textContent == "X" && cell5.textContent == "X" && cell8.textContent == "X"){
+                draw2(cell2, cell5, cell8);
+            } else if (cell3.textContent == "O" && cell6.textContent == "O" && cell9.textContent == "O"){
+                draw1(cell3, cell6, cell9);
+            } else if (cell3.textContent == "X" && cell6.textContent == "X" && cell9.textContent == "X"){
+                draw2(cell3, cell6, cell9);
+            } else if (cell1.textContent == "O" && cell5.textContent == "O" && cell9.textContent == "O"){
+                draw1(cell1, cell5, cell9);
+            } else if (cell1.textContent == "X" && cell5.textContent == "X" && cell9.textContent == "X"){
+                draw2(cell1, cell5, cell9);
+            } else if (cell3.textContent == "O" && cell5.textContent == "O" && cell7.textContent == "O"){
+                draw1(cell3, cell5, cell7);
+            } else if (cell3.textContent == "X" && cell5.textContent == "X" && cell7.textContent == "X"){
+                draw2(cell3, cell5, cell7);
+            } else {
+                currentPlayer.textContent = (currentPlayer.textContent === "Player 1") ? "Player 2" : "Player 1";
+            }
         }
-        if (cell1.textContent == "O" && cell2.textContent == "O" && cell3.textContent == "O"){
-            draw1(cell1, cell2, cell3);
-        } else if (cell1.textContent == "X" && cell2.textContent == "X" && cell3.textContent == "X"){
-            draw2(cell1, cell2, cell3);
-        } else if (cell4.textContent == "O" && cell5.textContent == "O" && cell6.textContent == "O"){
-            draw1(cell4, cell5, cell6);
-        } else if (cell4.textContent == "X" && cell5.textContent == "X" && cell6.textContent == "X"){
-            draw2(cell4, cell5, cell6);
-        } else if (cell7.textContent == "O" && cell8.textContent == "O" && cell9.textContent == "O"){
-            draw1(cell7, cell8, cell9);
-        } else if (cell7.textContent == "X" && cell8.textContent == "X" && cell9.textContent == "X"){
-            draw2(cell7, cell8, cell9);
-        } else if (cell1.textContent == "O" && cell4.textContent == "O" && cell7.textContent == "O"){
-            draw1(cell1, cell4, cell7);
-        } else if (cell1.textContent == "X" && cell4.textContent == "X" && cell7.textContent == "X"){
-            draw2(cell1, cell4, cell7);
-        } else if (cell2.textContent == "O" && cell5.textContent == "O" && cell8.textContent == "O"){
-            draw1(cell2, cell5, cell8);
-        } else if (cell2.textContent == "X" && cell5.textContent == "X" && cell8.textContent == "X"){
-            draw2(cell2, cell5, cell8);
-        } else if (cell3.textContent == "O" && cell6.textContent == "O" && cell9.textContent == "O"){
-            draw1(cell3, cell6, cell9);
-        } else if (cell3.textContent == "X" && cell6.textContent == "X" && cell9.textContent == "X"){
-            draw2(cell3, cell6, cell9);
-        } else if (cell1.textContent == "O" && cell5.textContent == "O" && cell9.textContent == "O"){
-            draw1(cell1, cell5, cell9);
-        } else if (cell1.textContent == "X" && cell5.textContent == "X" && cell9.textContent == "X"){
-            draw2(cell1, cell5, cell9);
-        } else if (cell3.textContent == "O" && cell5.textContent == "O" && cell7.textContent == "O"){
-            draw1(cell3, cell5, cell7);
-        } else if (cell3.textContent == "X" && cell5.textContent == "X" && cell7.textContent == "X"){
-            draw2(cell3, cell5, cell7);
-        } else {
-        currentPlayer.textContent = (currentPlayer.textContent === "Player 1") ? "Player 2" : "Player 1";
-        }
-    })
+    });
 });
 
 function draw1(a, b, c){

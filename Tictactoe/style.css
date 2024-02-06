@@ -40,7 +40,7 @@ div#board{
     margin: auto;
     width: 600px;
     height: 600px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);

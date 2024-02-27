@@ -52,7 +52,7 @@ div#keys button{
     background-color .1s ease-in-out;
 }
 
-div#keys button:hover{
+div#keys button:hover:not(:disabled){
     cursor: pointer;
     color: white;
     background-color: darkorchid;

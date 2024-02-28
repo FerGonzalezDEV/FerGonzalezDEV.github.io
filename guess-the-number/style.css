@@ -13,7 +13,7 @@ h1{
 
 p{
     text-align: center;
-    font-size: clamp(1.6em, 2vw, 2.5em);
+    font-size: clamp(1.3em, 2vw, 2.5em);
 
 }
 

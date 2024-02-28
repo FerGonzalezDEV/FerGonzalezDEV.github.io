@@ -33,6 +33,7 @@ function resetGame(){
     mainText.innerHTML = "Guess a number between <span class='purple'>1</span> and <span class='purple'>10</span>";
     mainText.style.color = "black";
     number.innerHTML = "";
+    resetBtn.style.display = "none"
     Array.from(numberBtns).map(numberBtn =>{
         numberBtn.disabled = false;
         numberBtn.style.color = "";

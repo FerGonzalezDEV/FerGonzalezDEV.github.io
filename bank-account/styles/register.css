@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: clamp(2em, 2vw,2.5em);
+    padding-top: 50px;
+    color: #00a5cf;
+}
+
+div.decoration{
+    z-index: -1;
+}
+
+div#decoration1{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top:  -175px;
+    left: 80%;
+    background-color: #144a65;
+    border-radius: 50%;
+}
+
+div#decoration2{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    bottom: -250px;
+    left: -60%;
+    background-color: #63e2fd;
+    border-radius: 50%;
+}
+
+div#decoration3{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 80%;
+    left: 80%;
+    background-color: cyan;
+    border-radius: 50%;
+}
+
+div#decoration4{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 5%;
+    left: -10%;
+    background-color: #83faff;
+    border-radius: 50%;
+}
+
+div#container{
+    position: relative;
+    height: auto;
+    width: 50vh;
+    margin: 50px auto;
+}
+
+div#container form{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: rgba(235, 253, 255, .3);
+    backdrop-filter:  blur(30px);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+    padding: 50px 35px;
+    border-radius: 10px;
+}
+
+div#container form h2{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 2em;
+    color: #00a5cf;
+}
+
+div#container form div.wrapper-data{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2px;
+    margin-bottom: 20px;
+}
+
+div#container form div.wrapper-data input{
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #00a5cf;
+    transition: border-bottom .2s ease-in;
+    background-color: transparent;
+    padding: 5px;
+    &:hover{
+        border-bottom: 3px solid #00a5cf;
+    }
+}
+
+div#container form div.wrapper-data select{
+    border: none;
+    border-bottom: .5px solid  #00a5cf;
+    outline: none;
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+div#container form button{
+    width: 30%;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(3, 138, 183);
+    color: white;
+    box-shadow: 0 0 0 rgba(3, 138, 183, .4);
+    transition: box-shadow .3s ease-in;
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(3, 138, 183, .4);
+    }
+}
+

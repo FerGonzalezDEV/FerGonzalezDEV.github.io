@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/register.css">
+    <title>Bank Account</title>
+</head>
+<body>
+    <h1>Bank Account Information:</h1>
+    <div id="container">
+        <div id="decoration1" class="decoration"></div>
+        <div id="decoration2" class="decoration"></div>
+        <div id="decoration3" class="decoration"></div>
+        <div id="decoration4" class="decoration"></div>
+        <form>
+            <h2>Register</h2>
+            <div class="wrapper-data">
+                <label for="">Full name:</label>
+                <input type="text" name="" id="user-fullname" required>
+            </div>
+            <div class="wrapper-data">
+                <label for="">Identity number:</label>
+                <input type="text" name="" id="user-id-number" required>
+            </div>
+            <div class="wrapper-data">
+                <label for="">Date of birth:</label>
+                <input type="date" name="" id="user-date-of-birth" required>
+            </div>
+            <div class="wrapper-data">
+                <label for="">Email:</label>
+                <input type="email" name="" id="user-email" required>
+            </div>
+            <div class="wrapper-data">
+                <label for="">Username:</label>
+                <input type="text" name="" id="username" required>
+            </div>
+            <div class="wrapper-data">
+                <label for="">Password:</label>
+                <input type="password" name="" id="user-password" required>
+            </div>
+            <div class="wrapper-data">
+                <label for="">Security question:</label>
+                <select id="user-security-question" required>
+                    <option value=""></option>
+                    <option value="My grandmother's name">My grandmother's name</option>
+                    <option value="My first dog name">My first dog name</option>
+                    <option value="My favorite color">My favorite color</option>
+                  </select>
+            </div>
+            <div class="wrapper-data">
+                <label for="">Answer:</label>
+                <input type="text" name="" id="answer-security-question" required>
+            </div>
+            <button onclick="enviarFormulario()" value="Log in" type="button">Log in</button>
+        </form>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

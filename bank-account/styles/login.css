@@ -6,7 +6,8 @@
 }
 
 body{
-overflow-x: hidden;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 h1{
@@ -63,7 +64,9 @@ div#decoration4{
 div#container{
     position: relative;
     height: auto;
-    width: 50vh;
+    width: 50vw;
+    max-width: 700px;
+    min-width: 300px;
     margin: 50px auto;
 }
 
@@ -136,3 +139,33 @@ div#container form button{
     }
 }
 
+@media only screen and (max-width: 680px){
+    div#decoration1{
+        width: 80px;
+        height: 80px;
+        top: -30px;
+        left: 80%;
+    }
+    
+    div#decoration2{
+        width: 250px;
+        height: 250px;
+        bottom: -160px;
+        left: -100px;
+    }
+    
+    div#decoration3{
+        
+        width: 80px;
+        height: 80px;
+        top: 80%;
+        left: 80%; 
+    }
+
+    div#decoration4{
+        width: 120px;
+        height: 120px;
+        top: 5%;
+        left: -10%;
+    }
+}

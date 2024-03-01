@@ -10,7 +10,7 @@ html, body{
 }
 
 div#root{
-    max-witdh: 100vw;
+    witdh: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
 }

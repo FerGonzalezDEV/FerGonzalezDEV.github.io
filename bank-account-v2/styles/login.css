@@ -125,8 +125,13 @@ div#container form button{
     border-radius: 10px;
     cursor: pointer;
     transition: .4s ease-in-out;
-    background-color: #00d7ff;
+    background-color: #b9cfe8;
     color: white;
+    transition: background-color ease-in .3s;
+}
+
+div#container form button:hover{
+    background-color: #6a7fc1;
 }
 
 @media only screen and (max-width: 1200px){}

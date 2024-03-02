@@ -16,6 +16,7 @@ div#container{
 }
 
 div#container h1{
+    text-align: center;
     justify-self: flex-start;
     padding: 30px 0;
     color: #414e6e;

@@ -98,7 +98,7 @@ div#container form div.wrapper-data input[type="password"]{
     font-size: 1.1em;
     outline: none;
     background-color: transparent;
-
+    padding: 7px;
 }
 
 div#container form a{
@@ -126,12 +126,14 @@ div#container form button{
     cursor: pointer;
     transition: .4s ease-in-out;
     background-color: #b9cfe8;
-    color: white;
-    transition: background-color ease-in .3s;
+    color: #414e6e;
+    transition: background-color ease-in .3s,
+                color ease-in .3s;
 }
 
 div#container form button:hover{
     background-color: #6a7fc1;
+    color: white;
 }
 
 @media only screen and (max-width: 1200px){}

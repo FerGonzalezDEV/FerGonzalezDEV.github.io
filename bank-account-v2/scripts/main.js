@@ -10,7 +10,7 @@ const form1 = `
 <label for="username">Contraseña: </label>
 <input type="password" name="user-password" id="password" required>
 </div>
-<a href="#" onclick="register()">Create account</a>
+<a href="#" onclick="register()">Crear cuenta</a>
 <button type="button" id="login-form-button" onclick="createUser()">Ingresar</button>
 `
 
@@ -24,7 +24,7 @@ const form2 = `
 <label for="register-password">Contraseña: </label>
 <input type="password" name="register-password" id="register-password" required>
 </div>
-<a href="#" onclick="login()">Log in</a>
+<a href="#" onclick="login()">Autenticarse</a>
 <button type="button" id="register-form-button">Crear Usuario</button>
 `
 login();
